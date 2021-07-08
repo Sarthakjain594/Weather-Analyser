@@ -19,7 +19,6 @@ submit.on ( 'click' , ()=> {
       var windValue = data.wind.speed + " km/h"
       var humidityValue = data.main.humidity + "%" ; 
 
-
       temperature.innerHTML = tempValue;
       humidity.innerHTML = humidityValue;
       wind.innerHTML = windValue;

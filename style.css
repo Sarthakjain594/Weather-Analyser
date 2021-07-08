@@ -33,7 +33,7 @@ h1 {
 
 div.container {
     width: 50%;
-    margin:  2rem auto auto 2rem  ;
+    margin:  2rem auto auto auto  ;
     padding: 0 2rem;
 }
 
@@ -44,14 +44,12 @@ input#city {
     border-radius: 2rem;
     margin: 2rem auto auto auto;
     padding: auto 2rem;
-    
 }
 
 input#city::placeholder {
     padding-left: 1rem;
     letter-spacing: 2px;
 }
-
 
 input[type="submit"] {
     display: inline-block;
@@ -109,8 +107,5 @@ input:focus {
     outline: none;
 }
 
-div#map {
-    width: 50%;
-    margin: 2rem 0 auto auto;
-}
+
 
