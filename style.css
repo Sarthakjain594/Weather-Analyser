@@ -1,0 +1,116 @@
+:root {
+    --red:rgb(219,68,55);
+    --blue:rgb(66,133,244);
+    --yellow:rgb(244,160,0);
+    --green:rgb(15,157,88);
+}
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anton" , sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: rgb(66,133,244,0.09);
+    z-index: -1;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Anton" , cursive;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    margin: 1rem auto;
+    background: linear-gradient(to bottom , rgb(219,68,55)  , rgb(244,160,0) , rgb(15,157,88));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+div.container {
+    width: 50%;
+    margin:  2rem auto auto 2rem  ;
+    padding: 0 2rem;
+}
+
+input#city {
+    width: 25rem;
+    height: 2.5rem;
+    border: 1.5px solid whitesmoke;
+    border-radius: 2rem;
+    margin: 2rem auto auto auto;
+    padding: auto 2rem;
+    
+}
+
+input#city::placeholder {
+    padding-left: 1rem;
+    letter-spacing: 2px;
+}
+
+
+input[type="submit"] {
+    display: inline-block;
+    height: 2.5rem;
+    width: 6rem;
+    border: none;
+    border-radius: 2rem;
+    color: #fff;
+    background-color: var(--green);
+    margin: 2rem auto 1rem auto;
+}
+
+input[type="submit"]:hover {
+    background-color: transparent;
+    border: 2px solid var(--green);
+    color: var(--green);
+} 
+
+div.buttons {
+ display: flex;
+ align-items: center;
+ width: 50%;
+ margin: auto;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin:2rem auto 1rem auto;
+    padding: 1rem;
+}
+
+.wind , .temperature , .humidity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.material-icons {
+    height:2rem;
+    width: 2rem;
+    margin: 0 0 0 0;
+    display: inline;
+}
+
+h2 {
+    color: black;
+    z-index: 3;
+    margin-left: 2rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+div#map {
+    width: 50%;
+    margin: 2rem 0 auto auto;
+}
+

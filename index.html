@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="style.css">
+    <title>Weather-Analyser</title>
+</head>
+<body>
+    <h1>Weather Analyser</h1>
+    <div class="container">
+        <div class="input">
+            <label for="city" id="city-label">Enter city name : </label>
+            <input type="text" name="cityname" id="city" placeholder="Enter City ">
+        </div>
+        <div class="buttons">
+            <input type="submit" id="submit">
+        <input type="submit" id="reset" value="Reset" >
+        </div>
+       <div class="output">
+        <div class="temperature">
+            <label for="temperature"><span class="material-icons">thermostat</span></label>
+            <h2 id="temperature"></h2>
+        </div>
+        <h2 id="desc"></h2>
+       <div class="humidity">
+        <label for="humidity"><span class="material-icons">water_drop </span></label>
+        <h2 id="humidity"></h2>
+       </div>
+       <div class="wind">
+        <label for="wind"><span class="material-icons">air</span></label>
+        <h2 id="wind"></h2>
+       </div>
+       </div>
+    </div>
+
+    <div id="map"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
