@@ -104,7 +104,11 @@ h2 {
 }
 
 input {
+<<<<<<< HEAD
     padding-left: 1rem;
+=======
+    padding-left : 1rem ; 
+>>>>>>> ef032bdd71e5dfd550a3667f11df0b14c6bbf4c6
 }
 
 input:focus {
