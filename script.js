@@ -9,7 +9,10 @@ var windspeedVar= $("#wind");
  
 // var url = `https://api.openweathermap.org/data/2.5/weather?q=${cityname.val()}&appid=${APIKey}` ;
 
-submit.on ( 'click' , ()=> {
+
+function getData(){
+
+
    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname.val()}&units=metric&appid=1ced8e8756a1069034cf5ed619bc1448`)
    .then(response => response.json())
    .then(data => {
@@ -23,11 +26,16 @@ submit.on ( 'click' , ()=> {
       humidity.innerHTML = humidityValue;
       wind.innerHTML = windValue;
    })
-})
+}
 
-reset.on('click' , ()=>{
+function resetData(){
    cityname.val(null);
    temperature.innerHTML = "";
    humidity.innerHTML = "";
    wind.innerHTML = "";
-})
+}
+
+// Getting data on submit 
+submit.click(getData);
+
+reset.click(resetData);
