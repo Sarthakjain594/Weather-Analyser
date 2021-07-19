@@ -16,6 +16,7 @@
 body {
     background-color: rgb(66,133,244,0.09);
     z-index: -1;
+    zoom:105%;
     color: black;
 }
 
